@@ -51,3 +51,22 @@ spec:
           periodSeconds: 20
           timeoutSeconds: 10
           failureThreshold: 3
+
+
+---
+  
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+  labels:
+    app: web
+spec:
+  type: LoadBalancer
+  selector:
+    app: web
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: http
