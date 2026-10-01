@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: trip-service
-          image: europe-west1-docker.pkg.dev/{{PROJECT_ID}}/ride-sharing/trip-service
+          image: chimdi247/go-ride-trip-service:v1 
           ports:
             - containerPort: 9093
           resources:

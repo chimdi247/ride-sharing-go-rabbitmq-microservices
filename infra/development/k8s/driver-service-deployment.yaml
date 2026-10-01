@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: driver-service
-          image: ride-sharing/driver-service
+          image: chimdi247/go-ride-driver-service:v1 
           imagePullPolicy: Never
           ports:
             - containerPort: 9092
